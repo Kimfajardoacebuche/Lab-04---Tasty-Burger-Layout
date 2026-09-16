@@ -1,0 +1,86 @@
+body {
+  background: wheat;
+  margin: auto;
+  color: black;
+  font: 1em sans-serif;
+}
+h2{
+    color:black;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px; 
+}
+
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(171, 189, 68);
+  border: 2px solid black;
+  text-align: center;
+  width: auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.product-card img {
+  width: auto;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.rating{
+     display: flex;
+    gap: 2px;
+    padding: 10px 60px 0;
+    padding:auto;
+}
+
+.rating span {
+    color: white;
+    font-size: 18px;
+}
+.rating {
+    display: flex;
+    gap: 3px;
+    cursor: pointer;
+    padding: 10px 50px 0;
+}
+
+.star.active {
+    color: #c98116;
+}
+
+.star:hover {
+    color: #ddb359;
+}
+
+.controls {
+  margin-top: 10px;
+}
+.controls button{
+    cursor: pointer;
+    
+}
+
+.controls span {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.out-of-stock {
+  color: red;
+  font-weight: bold;
+}
+
+.low-stock {
+  color: rgb(46, 37, 21);
+  font-weight: bold;
+}
